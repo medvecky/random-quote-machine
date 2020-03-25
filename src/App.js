@@ -3,6 +3,9 @@ import './App.css';
 
 import ReactFCCtest from 'react-fcctest';
 import Text from "./Text";
+import Author from "./Author";
+import NewQuoteButton from "./NewQuoteButton";
+import TweetButton from "./TweetButton";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -19,12 +22,17 @@ function App() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="align-right">Author</Col>
+                    <Col className="align-right">
+                        <Author />
+                    </Col>
                 </Row>
                 <Row>
-                    <Col>Link1</Col>
-                    <Col>link2 </Col>
-                    <Col xs={10} className="align-right">Button</Col>
+                    <Col>
+                        <TweetButton />
+                    </Col>
+                    <Col xs={5} className="align-right">
+                        <NewQuoteButton />
+                    </Col>
                 </Row>
             </Container>
         </div>

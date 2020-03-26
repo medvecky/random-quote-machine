@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css.map';
 
 import './NewQuoteButton.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
+import {faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
 
 
 function TweetButton() {

@@ -1,11 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
- function Author() {
-    return (
-      <div id="author">
-          AuthorName Author surname
-      </div>
-    );
- }
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPencilAlt} from '@fortawesome/free-solid-svg-icons';
 
- export default Author;
+function Author(props) {
+    return (
+        <div id="author">
+            <h5>
+                <FontAwesomeIcon
+                    icon={faPencilAlt}
+                />
+                {props.authorName}
+            </h5>
+        </div>
+    );
+}
+
+export default Author;

@@ -13,8 +13,8 @@ import Col from "react-bootstrap/Col";
 
 class App extends React.Component {
 
-    constructor(props, context) {
-        super(props, context);
+    constructor(props) {
+        super(props);
         this.state = {
             quoteText: "",
             quoteAuthor: ""
@@ -87,7 +87,10 @@ class App extends React.Component {
                     </Row>
                     <Row>
                         <Col>
-                            <TweetButton/>
+                            <TweetButton
+                                text={this.state.quoteText}
+                                author={this.state.quoteAuthor}
+                            />
                         </Col>
                         <Col xs={5} className="align-right">
                             <NewQuoteButton onclick={this.updateQuote} />

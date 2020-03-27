@@ -1,17 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css.map';
-
 import './NewQuoteButton.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
 
 
-function TweetButton() {
+function TweetButton(props) {
     return (
         <div className="margin">
             <a
                 id="tweet-quote"
-                href="https://www.w3schools.com"
+                href={
+                    'https://twitter.com/intent/tweet?text='
+                    + '"' + props.text + '" ' + props.author
+                }
             >
                 <FontAwesomeIcon
                     icon={faTwitterSquare}
